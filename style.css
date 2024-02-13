@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Exo-Regular";
+    src: url("Exo-Regular.woff2");
+    
+}
+
+ul {
+    font-family: "Exo-Regular", sans-serif;
+}
+
+body{
+    background-color: rgb(227, 255, 225);
+}
