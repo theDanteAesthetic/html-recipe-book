@@ -1,13 +1,31 @@
 @font-face {
     font-family: "Exo-Regular";
-    src: url("Exo-Regular.woff2");
+    src: url("fonts/Exo-Regular.woff2");
     
 }
-
+@font-face {
+    font-family: "Exo-Thin";
+    src: url("fonts/Exo-Thin.woff2");
+}
+header {
+    font-family: "Exo-Regular", sans-serif;
+    font-size: 35px;
+}
+h1 {
+    font-family: "Exo-Thin", sans-serif;
+    font-size: 35px;
+}
+h2 {
+    font-family: "Exo-Thin", sans-serif;
+    font-size: 30px;
+}
 ul {
     font-family: "Exo-Regular", sans-serif;
+    font-size: 25px;
 }
-
+a {
+    color: rgb(0,0,0);
+}
 body{
     background-color: rgb(227, 255, 225);
 }
