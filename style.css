@@ -7,6 +7,10 @@
     font-family: "Exo-Thin";
     src: url("fonts/Exo-Thin.woff2");
 }
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 header {
     font-family: "Exo-Regular", sans-serif;
     font-size: 30px;
@@ -31,12 +35,9 @@ nav ul {
 }
 ul {
     font-family: "Exo-Regular", sans-serif;
+    
     font-size: 25px;
-    background-image: url("images/quinoa-white-chicken-chili.jpg");
-    background-repeat: no-repeat;
     position: relative;
-    width: 500px;
-    height: 500px;
 }
 li{
     display: inline-flex;
@@ -45,18 +46,36 @@ li{
     padding: 2px;
     margin: 4px;
 }
-ul:has(a[href="tips/mango.html"]){
-    background-image: none;
-    height: 40px;
+
+li:has(a[href="recipes/salsa-verde.html"]){
+    color: rgb(255, 255, 255);
+    background-image: url("images/salsa-verde.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width:200px;
 }
+
+li:has(a[href="recipes/quinoa-white-chicken-chili.html"]){
+    background-image: url("images/quinoa-white-chicken-chili.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width:200px;
+}
+
+li:has(a[href="recipes/spicy-thai-kale-salad.html"]){
+    background-image: url("images/spicy-thai-kale-salad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width:200px;
+}
+
 li:has(a):hover {
     background-color: rgb(239, 255, 239);
 }
 
-a {
-    color: rgb(0,0,0);
-    text-decoration: none;
-}
 body{
     display: grid;
     background-color: rgb(178, 210, 176);
