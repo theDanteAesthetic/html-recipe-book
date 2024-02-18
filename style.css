@@ -7,50 +7,72 @@
     font-family: "Exo-Thin";
     src: url("fonts/Exo-Thin.woff2");
 }
-
+@font-face {
+    font-family: "Abandoned-Bold";
+    src: url("fonts/Abandoned-Bold.woff2");
+}
 
 header {
-    font-family: "Exo-Regular", sans-serif;
-    font-size: 30px;
+    font-family: "Abandoned-Bold", sans-serif;
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+main{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 h1 {
     font-family: "Exo-Thin", sans-serif;
     font-size: 35px;
 }
 h2 {
-    display: inline;
     font-family: "Exo-Thin", sans-serif;
     font-size: 30px;
     border-bottom: 2px dotted;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 nav ul {
-    display: flex;
+    display: inline-flex;
+    text-align: center;
     justify-content: center;
-    list-style: none;
     font-family: "Exo-Regular", sans-serif;
     font-size: 40px;
     border: rgb(255, 255, 255) 5px dotted;
     border-radius: 10px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 nav li{
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    border: rgb(255, 255, 255) 2px dotted;
+    border-radius: 5px;
 }
 ul {
     font-family: "Exo-Regular", sans-serif;
     
     font-size: 25px;
-    position: relative;
+    
 }
 li{
-    display: inline-flex;
-    
+    list-style: none;
     background-color: rgb(221, 246, 219);
     border: rgb(255, 255, 255) 1px dashed;
-    border-radius: 5px;
     padding: 2px;
     margin: 4px;
 }
@@ -89,6 +111,9 @@ a {
 }
 
 body{
-    display: flexbox;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    width: 100%;
     background-color: rgb(178, 210, 176);
 }
