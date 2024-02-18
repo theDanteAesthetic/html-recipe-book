@@ -12,22 +12,6 @@
     src: url("fonts/Abandoned-Bold.woff2");
 }
 
-@keyframes textExpandBig {
-    0%{
-        letter-spacing: 0rem;
-    }
-    100%{
-        letter-spacing: 1rem;
-    }
-}
-@keyframes textExpandSmall {
-    0%{
-        letter-spacing: 0rem;
-    }
-    100%{
-        letter-spacing: 0.1rem;
-    }
-}
 
 header {
     text-align: center;
@@ -35,28 +19,25 @@ header {
         font-family: "Abandoned-Bold", sans-serif;
         font-size: 70px;
         justify-content: center;
-        :hover{
-            animation-name: textExpandBig;
-            animation-duration: 0.5s;
-            animation-fill-mode: both;
-            animation-direction: normal;
-        };
+        transition: letter-spacing 0.5s 0s ease-in-out;
         
     };
     & li {
-            :hover{
-                animation-name: textExpandSmall;
-                animation-duration: 0.5s;
-                animation-direction: alternate;
-                animation-iteration-count: infinite;
-            }
+        transition: letter-spacing 0.5s 0s ease-in-out;
+            
     }
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+header p:hover{
+    letter-spacing: 1rem;
+}
 
+header li:hover{
+    letter-spacing: 0.1rem;
+}
 main{
     grid-column-start: 1;
     grid-column-end: 2;
